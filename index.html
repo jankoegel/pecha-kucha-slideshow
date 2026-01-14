@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pecha Kucha `(^_^)`</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml"
+  href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='4' fill='%23000'/%3E%3Cpath d='M9 6l1.5-2h3L15 6h3a2 2 0 012 2v8a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h3zm3 4a4 4 0 100 8 4 4 0 000-8z' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="drag-here">
+    Drag images here
+  </div>
+
+  <!-- Overview -->
+  <div id="overview" class="hidden">
+    <button id="start-btn">Start Slideshow</button>
+    <div id="thumbnails"></div>
+  </div>
+
+  <!-- Slideshow -->
+  <div id="slideshow" class="hidden">
+    <img id="slide-image" alt="Slideshow image">
+    <div id="timer">0 s</div>
+    <div id="slide-counter">0 / 0</div>
+    <div id="image-label" class="hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
