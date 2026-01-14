@@ -82,18 +82,14 @@ function showSlide() {
 
 
 /* ----------------------------------------------------
-   CRITICAL FIX:
    Prevent browser from opening dragged files
 ---------------------------------------------------- */
-
 ["dragenter", "dragover", "dragleave", "drop"].forEach(eventName => {
   document.addEventListener(eventName, (e) => {
     e.preventDefault();
     e.stopPropagation();
   });
 });
-
-/* --- Drop Zone Highlight --- */
 
 document.addEventListener("dragover", e => {
   e.preventDefault();
@@ -131,7 +127,6 @@ document.addEventListener("drop", (e) => {
 
 
 /* --- Overview --- */
-
 function showOverview() {
   overview.classList.remove("hidden");
 
